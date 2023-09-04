@@ -7,7 +7,7 @@ module.exports = {
   target: 'node',
   output: {
     filename: 'server.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build/server'),
   },
   module: {
     rules: [
