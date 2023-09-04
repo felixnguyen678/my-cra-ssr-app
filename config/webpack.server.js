@@ -9,5 +9,23 @@ module.exports = {
     filename: 'server.js',
     path: path.resolve(__dirname, 'build'),
   },
-  // Add loaders and plugins for server-side rendering
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+    ],
+  },  
 };
