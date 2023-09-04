@@ -1,9 +1,8 @@
 
-
 // src/server.js
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import App from './App'; // Replace with your main App component
+// const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const App = require('./App').default; // Replace with your main App component
 import express from 'express';
 
 const app = express();

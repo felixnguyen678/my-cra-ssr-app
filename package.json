@@ -54,7 +54,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node build/server.js",
+    "start": "node build/server/server.js",
     "build:client": "webpack --config=config/webpack.client.js",
     "build:server": "webpack --config=config/webpack.server.js",
     "build": "npm run build:client && npm run build:server",
